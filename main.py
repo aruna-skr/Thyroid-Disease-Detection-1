@@ -94,6 +94,8 @@ def predictresult():
             res_Val='Primary Hypothyroid'
         elif pred==3:
             res_Val='Secondary Hypothyroid'
+        elif pred==4:
+            res_Val='Hyperthyroid'
 
         
         Output=f"Patient has {res_Val}"

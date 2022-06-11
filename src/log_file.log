@@ -282,3 +282,96 @@ Confusion Matrix:
  [ 26   0 466]]
 
 INFO: 2021-12-29 16:02:02,667: Random Forest Model with Grid Search Saved in Pickle
+INFO: 2022-05-13 07:40:31,273: Feature Selection
+INFO: 2022-05-13 07:40:34,028: Features ['TSH', 'TT4', 'FTI', 'on_thyroxine', 'I131_treatment', 'referral_source']
+INFO: 2022-05-13 07:40:41,356: Traininig Random Forest Model
+INFO: 2022-05-13 07:40:41,532: Train Result:
+===============
+Accuracy Score:99.81%
+---------------------------------
+Classification Report:
+                     0            1            2            3  accuracy  \
+precision     0.994428     0.999487     0.998474     1.000000   0.99809   
+recall        1.000000     0.992868     1.000000     0.999491   0.99809   
+f1-score      0.997206     0.996167     0.999236     0.999745   0.99809   
+support    1963.000000  1963.000000  1963.000000  1963.000000   0.99809   
+
+             macro avg  weighted avg  
+precision     0.998097      0.998097  
+recall        0.998090      0.998090  
+f1-score      0.998089      0.998089  
+support    7852.000000   7852.000000  
+-----------------------------------
+Confusion Matrix:
+[[1963    0    0    0]
+ [  11 1949    3    0]
+ [   0    0 1963    0]
+ [   0    1    0 1962]]
+
+INFO: 2022-05-13 07:40:41,553: Test Result:
+===============
+Accuracy Score:97.76%
+---------------------------------
+Classification Report:
+                    0           1           2  accuracy    macro avg  \
+precision    0.937143    1.000000    1.000000  0.977642     0.979048   
+recall       1.000000    0.991870    0.941057  0.977642     0.977642   
+f1-score     0.967552    0.995918    0.969634  0.977642     0.977701   
+support    492.000000  492.000000  492.000000  0.977642  1476.000000   
+
+           weighted avg  
+precision      0.979048  
+recall         0.977642  
+f1-score       0.977701  
+support     1476.000000  
+---------------------------------
+Confusion Matrix:
+[[492   0   0]
+ [  4 488   0]
+ [ 29   0 463]]
+
+INFO: 2022-05-13 07:40:48,779: Train Result:
+===============
+Accuracy Score:99.99%
+---------------------------------
+Classification Report:
+                0            1            2       3  accuracy    macro avg  \
+precision     1.0     1.000000     0.999491     1.0  0.999873     0.999873   
+recall        1.0     0.999491     1.000000     1.0  0.999873     0.999873   
+f1-score      1.0     0.999745     0.999745     1.0  0.999873     0.999873   
+support    1963.0  1963.000000  1963.000000  1963.0  0.999873  7852.000000   
+
+           weighted avg  
+precision      0.999873  
+recall         0.999873  
+f1-score       0.999873  
+support     7852.000000  
+-----------------------------------
+Confusion Matrix:
+[[1963    0    0    0]
+ [   0 1962    1    0]
+ [   0    0 1963    0]
+ [   0    0    0 1963]]
+
+INFO: 2022-05-13 07:40:48,802: Test Result:
+===============
+Accuracy Score:98.10%
+---------------------------------
+Classification Report:
+                    0           1           2  accuracy    macro avg  \
+precision    0.946154    1.000000    1.000000   0.98103     0.982051   
+recall       1.000000    0.995935    0.947154   0.98103     0.981030   
+f1-score     0.972332    0.997963    0.972860   0.98103     0.981052   
+support    492.000000  492.000000  492.000000   0.98103  1476.000000   
+
+           weighted avg  
+precision      0.982051  
+recall         0.981030  
+f1-score       0.981052  
+support     1476.000000  
+---------------------------------
+Confusion Matrix:
+[[492   0   0]
+ [  2 490   0]
+ [ 26   0 466]]
+
